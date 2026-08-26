@@ -70,14 +70,14 @@ export default function TerminalTypewriter() {
   }, [isReducedMotion]);
 
   return (
-    <div className="bg-accent-green text-amber-300 px-5 py-4 font-mono text-label md:text-body-md min-h-14 flex items-center overflow-hidden">
-      <span aria-hidden="true" className="shrink-0 mr-3 text-amber-400">
+    <div className="bg-background text-foreground px-5 py-4 font-mono text-label md:text-body-md min-h-14 flex items-center overflow-hidden">
+      <span aria-hidden="true" className="shrink-0 mr-3 text-foreground">
         &gt;
       </span>
       <span aria-hidden="true" className="truncate">
         {isReducedMotion ? phrases[0] : text}
         <span
-          className="inline-block w-[0.55em] h-[1.1em] bg-amber-300 align-middle ml-1 motion-safe:animate-pulse"
+          className="inline-block w-[0.55em] h-[1.1em] bg-foreground align-middle ml-1 motion-safe:animate-pulse"
           aria-hidden="true"
         />
       </span>
