@@ -20,7 +20,7 @@ export default function AboutPage() {
         <div className="md:col-span-7 md:col-start-6">
           <Eyebrow className="mb-4 block">01/ ABOUT</Eyebrow>
           <h1 className="font-display text-headline-mobile md:text-display mb-8">
-            I BUILD AT THE PROTOCOL LAYER.
+            I BUILD AT THE PROTOCOL LAYER
           </h1>
         </div>
       </section>

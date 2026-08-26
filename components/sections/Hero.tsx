@@ -1,6 +1,7 @@
 import { social } from "@/data/social";
 import ArrowLink from "@/components/ui/ArrowLink";
 import Eyebrow from "@/components/ui/Eyebrow";
+import TerminalTypewriter from "@/components/sections/TerminalTypewriter";
 
 export default function Hero() {
   return (
@@ -13,6 +14,7 @@ export default function Hero() {
           <h1 className="font-display text-headline-mobile md:text-display">
             SOLIDITY / SMART CONTRACT / DEVELOPER
           </h1>
+          <TerminalTypewriter />
           <p className="font-body text-body-lg max-w-2xl text-foreground/80">
             {social.positioning} Specializing in robust architectural design
             and rigorous protocol testing.
