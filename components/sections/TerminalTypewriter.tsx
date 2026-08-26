@@ -28,7 +28,6 @@ export default function TerminalTypewriter() {
 
   useEffect(() => {
     if (isReducedMotion) {
-      setText(phrases[0]);
       return;
     }
 
@@ -76,7 +75,7 @@ export default function TerminalTypewriter() {
         &gt;
       </span>
       <span aria-hidden="true" className="truncate">
-        {text}
+        {isReducedMotion ? phrases[0] : text}
         <span
           className="inline-block w-[0.55em] h-[1.1em] bg-amber-300 align-middle ml-1 motion-safe:animate-pulse"
           aria-hidden="true"
