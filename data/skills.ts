@@ -52,6 +52,8 @@ export const technologies = [
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
+  "Frontend Development",
+  "Animation",
   "Wagmi",
   "Viem",
   "Ethers.js",
