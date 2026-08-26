@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 const phrases = [
   "A Web3 / Blockchain Developer",
   "A Solidity Smart Contract Developer",
+  "A Frontend Developer",
 ];
 
 const typeSpeed = 75;
