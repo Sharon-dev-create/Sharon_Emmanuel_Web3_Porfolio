@@ -8,6 +8,7 @@ export const metadata: Metadata = {
 
 const timeline = [
   { year: "2024", label: "BLOCKCHAIN DEVELOPMENT" },
+  { year: "2024", label: "FRONTEND DEVELOPMENT" },
   { year: "2025", label: "SMART CONTRACT ENGINEERING" },
   { year: "2026", label: "PROTOCOL DEVELOPMENT" },
 ];
@@ -33,7 +34,11 @@ export default function AboutPage() {
           </div>
           <div className="w-full aspect-[3/4] border border-editorial-border bg-surface flex items-center justify-center">
             <span className="font-mono text-label uppercase tracking-widest text-foreground/40 text-center px-6">
-              Portrait placeholder — replace with photo
+              <img
+                src="/Portfolio-Img.png"
+                alt="Sharon Emmanuel"
+                className="w-full h-full object-cover"
+              />
             </span>
           </div>
         </div>
@@ -44,7 +49,7 @@ export default function AboutPage() {
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <p>
               Sharon Emmanuel is a Solidity Smart Contract Developer and
-              recent NYSC graduate with a background in geophysics
+              with a background in geophysics
               engineering, focused on Ethereum protocol development and
               full-stack Web3 applications.
             </p>

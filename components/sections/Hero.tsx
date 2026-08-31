@@ -12,7 +12,7 @@ export default function Hero() {
         </div>
         <div className="md:col-span-8 flex flex-col gap-12">
           <h1 className="font-display text-headline-mobile md:text-display">
-            SOLIDITY / SMART CONTRACT / DEVELOPER
+            FRONTEND / SOLIDITY / SMART CONTRACT / DEVELOPER
           </h1>
           <TerminalTypewriter />
           <p className="font-body text-body-lg max-w-2xl text-foreground/80">
