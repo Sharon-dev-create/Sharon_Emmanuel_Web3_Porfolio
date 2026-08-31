@@ -7,8 +7,8 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "2024", label: "BLOCKCHAIN DEVELOPMENT" },
   { year: "2024", label: "FRONTEND DEVELOPMENT" },
+  { year: "2024", label: "BLOCKCHAIN DEVELOPMENT" },
   { year: "2025", label: "SMART CONTRACT ENGINEERING" },
   { year: "2026", label: "PROTOCOL DEVELOPMENT" },
 ];
@@ -32,14 +32,12 @@ export default function AboutPage() {
           <div className="border-t border-editorial-border pt-4 mb-4">
             <Eyebrow>FIG. 1 / PORTRAIT</Eyebrow>
           </div>
-          <div className="w-full aspect-[3/4] border border-editorial-border bg-surface flex items-center justify-center">
-            <span className="font-mono text-label uppercase tracking-widest text-foreground/40 text-center px-6">
-              <img
-                src="/Portfolio-Img.png"
-                alt="Sharon Emmanuel"
-                className="w-full h-full object-cover"
-              />
-            </span>
+          <div className="w-full aspect-[3/4] border border-editorial-border bg-surface flex items-center justify-center overflow-hidden">
+            <img
+              src="/Portfolio-Img2.png"
+              alt="Sharon Emmanuel"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
         <div className="md:col-span-6 md:col-start-7">
