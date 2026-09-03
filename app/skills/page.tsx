@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Tag from "@/components/ui/Tag";
-import { services, technologies } from "@/data/skills";
+import { services, technologyGroups } from "@/data/skills";
 
 export const metadata: Metadata = {
   title: "Skills & Services — Sharon Emmanuel",
@@ -73,11 +73,20 @@ export default function SkillsPage() {
         <div className="md:col-span-10">
           <Eyebrow className="md:hidden mb-6 block">05/ STACK</Eyebrow>
           <h2 className="font-display text-headline-lg mb-8 hidden md:block">
-            FULL TECHNOLOGY LIST
+            CORE STACK
           </h2>
-          <div className="flex flex-wrap gap-3">
-            {technologies.map((tech) => (
-              <Tag key={tech}>{tech.toUpperCase()}</Tag>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
+            {technologyGroups.map((group) => (
+              <div key={group.title}>
+                <h3 className="font-mono text-label text-muted mb-4">
+                  {group.title.toUpperCase()}
+                </h3>
+                <div className="flex flex-wrap gap-3">
+                  {group.technologies.map((technology) => (
+                    <Tag key={technology}>{technology.toUpperCase()}</Tag>
+                  ))}
+                </div>
+              </div>
             ))}
           </div>
         </div>

@@ -6,6 +6,11 @@ export type Service = {
   tags: string[];
 };
 
+export type TechnologyGroup = {
+  title: string;
+  technologies: string[];
+};
+
 export const services: Service[] = [
   {
     number: "01",
@@ -41,25 +46,55 @@ export const services: Service[] = [
   },
 ];
 
-export const technologies = [
-  "Solidity",
-  "Foundry",
-  "Hardhat",
-  "Ethereum",
-  "ERC-20",
-  "OpenZeppelin",
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Tailwind CSS",
-  "Frontend Development",
-  "Animation",
-  "Wagmi",
-  "Viem",
-  "Ethers.js",
-  "RainbowKit",
-  "Git",
-  "GitHub",
-  "Bash",
-  "Node.js",
+export const technologyGroups: TechnologyGroup[] = [
+  {
+    title: "Frontend",
+    technologies: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Tailwind CSS",
+      "Vite",
+      "Responsive Web Design",
+    ],
+  },
+  {
+    title: "Blockchain",
+    technologies: [
+      "Solidity",
+      "Ethereum",
+      "EVM",
+      "Foundry",
+      "Hardhat",
+      "Chainlink",
+      "Uniswap",
+    ],
+  },
+  {
+    title: "Web3 Integration",
+    technologies: [
+      "wagmi",
+      "viem",
+      "ethers.js",
+      "RainbowKit",
+      "WalletConnect",
+      "React Query",
+      "Contract Interaction",
+      "Network Switching",
+    ],
+  },
+  {
+    title: "Testing & Tools",
+    technologies: [
+      "Foundry Tests",
+      "Forge",
+      "Vitest",
+      "Git",
+      "GitHub",
+      "Node.js",
+      "pnpm",
+      "Linux",
+    ],
+  },
 ];
