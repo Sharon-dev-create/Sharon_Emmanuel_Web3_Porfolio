@@ -46,10 +46,12 @@ export default function AboutPage() {
           </div>
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <p>
-              Sharon Emmanuel is a Solidity Smart Contract Developer and
-              with a background in geophysics
-              engineering, focused on Ethereum protocol development and
-              full-stack Web3 applications.
+              Sharon Emmanuel is a Full-Stack Web3 Developer focused on building modern web applications and decentralized systems.
+              He works across the stack, from crafting polished, responsive interfaces with React, Next.js, TypeScript, and Tailwind CSS, 
+              to designing and testing Solidity smart contracts with Foundry and Hardhat. He also builds application backends and data layers with 
+              Supabase and PostgreSQL, connecting frontend experiences to both traditional and blockchain infrastructure.
+              His work sits at the intersection of frontend engineering and Web3, with a focus on building products that are technically
+               sound, visually refined, and genuinely usable.
             </p>
             <p>
               Sharon works across the stack — from contract architecture and
@@ -60,10 +62,13 @@ export default function AboutPage() {
           <div className="mt-16 border-t border-editorial-border pt-8">
             <Eyebrow className="mb-6 block">METADATA</Eyebrow>
             <div className="flex flex-wrap gap-4">
+              <Tag>FULL-STACK WEB3</Tag>
+              <Tag>FRONTEND ENGINEERING</Tag>
+              <Tag>SMART CONTRACTS</Tag>
+              <Tag>REACT / NEXT.JS</Tag>
+              <Tag>ETHEREUM / EVM</Tag>
               <Tag>SOLIDITY</Tag>
-              <Tag>ETHEREUM</Tag>
-              <Tag>GEOPHYSICS</Tag>
-              <Tag>WEB3</Tag>
+              <Tag>FOUNDRY</Tag>
             </div>
           </div>
         </div>
