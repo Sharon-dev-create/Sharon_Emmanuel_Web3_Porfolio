@@ -12,12 +12,12 @@ export default function Hero() {
         </div>
         <div className="md:col-span-8 flex flex-col gap-12">
           <h1 className="font-display text-headline-mobile md:text-display">
-            FRONTEND / SOLIDITY / SMART CONTRACT / DEVELOPER
+            FULL-STACK WEB3 DEVELOPER
           </h1>
           <TerminalTypewriter />
           <p className="font-body text-body-lg max-w-2xl text-foreground/80">
-            {social.positioning} Specializing in robust architectural design
-            and rigorous protocol testing.
+            Building polished interfaces, robust applications, and
+            decentralized systems.
           </p>
           <div className="flex gap-8 mt-8">
             <ArrowLink href="#work">VIEW WORK</ArrowLink>
