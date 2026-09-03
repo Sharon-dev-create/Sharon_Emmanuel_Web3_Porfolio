@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Tag from "@/components/ui/Tag";
 import { services, technologyGroups } from "@/data/skills";
@@ -76,14 +77,30 @@ export default function SkillsPage() {
             CORE STACK
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10">
-            {technologyGroups.map((group) => (
-              <div key={group.title}>
+            {technologyGroups.map((group, groupIndex) => (
+              <div
+                key={group.title}
+                className="stack-group-reveal"
+                style={
+                  {
+                    "--stack-delay": `${groupIndex * 120}ms`,
+                  } as CSSProperties
+                }
+              >
                 <h3 className="font-mono text-label text-muted mb-4">
                   {group.title.toUpperCase()}
                 </h3>
                 <div className="flex flex-wrap gap-3">
-                  {group.technologies.map((technology) => (
-                    <Tag key={technology}>{technology.toUpperCase()}</Tag>
+                  {group.technologies.map((technology, technologyIndex) => (
+                    <span
+                      key={technology}
+                      className="stack-tag-reveal inline-flex"
+                      style={{
+                        "--stack-tag-delay": `${groupIndex * 120 + technologyIndex * 45 + 250}ms`,
+                      } as CSSProperties}
+                    >
+                      <Tag>{technology.toUpperCase()}</Tag>
+                    </span>
                   ))}
                 </div>
               </div>
