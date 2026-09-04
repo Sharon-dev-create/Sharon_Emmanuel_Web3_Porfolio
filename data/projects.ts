@@ -7,6 +7,7 @@ export type Project = {
   number: string;
   slug: string;
   name: string;
+  image?: string;
   title: string;
   summary: string;
   tags: string[];
@@ -210,6 +211,7 @@ export const projects: Project[] = [
     number: "04",
     slug: "nexus",
     name: "NEXUS DEFI STAKING",
+    image: "/nexus-homepage.png",
     title: "NEXUS: DEFI TOKEN STAKING PROTOCOL",
     summary:
       "A decentralized token staking protocol supporting ERC-20 staking, reward accumulation, reward claims, and withdrawals with a TypeScript frontend.",

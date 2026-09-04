@@ -43,6 +43,7 @@ export default function ProjectRow({
       </div>
       <ImagePlaceholder
         label={`FIG. ${project.number} / ${project.name}`}
+        image={project.image}
         className="md:col-span-5 mt-12 md:mt-0 h-64 md:h-auto"
       />
     </Link>
