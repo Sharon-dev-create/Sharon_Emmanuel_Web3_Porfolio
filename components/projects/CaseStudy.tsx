@@ -40,6 +40,7 @@ export default function CaseStudy({ project }: { project: Project }) {
       <ImagePlaceholder
         label={`FIG. ${project.number} / ${project.name}`}
         image={project.image}
+        href={project.liveUrl}
         className="h-72 md:h-[420px] mb-section"
       />
 

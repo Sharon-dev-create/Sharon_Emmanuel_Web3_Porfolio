@@ -163,6 +163,7 @@ export const projects: Project[] = [
     number: "03",
     slug: "crowdfunding",
     name: "CROWDFUNDING DAPP",
+    image: "/Crowdfunding-dapp.png",
     title: "CROWDFUNDING DAPP: FULL-STACK CROWDFUNDING PROTOCOL",
     summary:
       "A full-stack decentralized crowdfunding application supporting campaign creation, ETH contributions, deadlines, and withdrawals with direct wallet integration.",
@@ -175,6 +176,7 @@ export const projects: Project[] = [
       "Wallet integration",
     ],
     github: "https://github.com/Sharon-dev-create",
+    liveUrl: "https://crowdfunding-d-app-omega.vercel.app/",
     sections: [
       {
         heading: "Overview",
