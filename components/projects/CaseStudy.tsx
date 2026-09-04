@@ -24,9 +24,16 @@ export default function CaseStudy({ project }: { project: Project }) {
               <Tag key={tag}>{tag}</Tag>
             ))}
           </div>
-          <ArrowLink href={project.github} external>
-            VIEW ON GITHUB
-          </ArrowLink>
+          <div className="flex flex-wrap gap-6">
+            <ArrowLink href={project.github} external>
+              VIEW ON GITHUB
+            </ArrowLink>
+            {project.liveUrl && (
+              <ArrowLink href={project.liveUrl} external>
+                VIEW LIVE PROJECT
+              </ArrowLink>
+            )}
+          </div>
         </div>
       </section>
 

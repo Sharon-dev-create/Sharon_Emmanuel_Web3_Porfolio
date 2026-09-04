@@ -13,6 +13,7 @@ export type Project = {
   tags: string[];
   concepts: string[];
   github: string;
+  liveUrl?: string;
   sections: CaseStudySection[];
 };
 
@@ -224,6 +225,7 @@ export const projects: Project[] = [
       "TypeScript frontend",
     ],
     github: "https://github.com/Sharon-dev-create",
+    liveUrl: "https://nexus-defi-staking-dapp-jg2cb7nxm.vercel.app/",
     sections: [
       {
         heading: "Overview",
