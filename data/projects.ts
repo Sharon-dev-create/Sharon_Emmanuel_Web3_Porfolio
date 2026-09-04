@@ -20,73 +20,9 @@ export type Project = {
 export const projects: Project[] = [
   {
     number: "01",
-    slug: "mymarket",
-    name: "MYMARKET",
-    title: "MYMARKET: DECENTRALIZED ESCROW MARKETPLACE",
-    summary:
-      "A secure Ethereum escrow protocol supporting ETH and ERC-20 payments. Built with a focus on trustless arbitration and seamless dispute resolution.",
-    tags: ["SOLIDITY", "FOUNDRY", "ERC-20"],
-    concepts: [
-      "Pull payments",
-      "SafeERC20",
-      "Balance-delta validation",
-      "State-based authorization",
-      "Timeout settlement",
-      "Foundry testing",
-    ],
-    github: "https://github.com/Sharon-dev-create",
-    sections: [
-      {
-        heading: "Overview",
-        body: [
-          "MyMarket is a decentralized escrow marketplace that lets a buyer and seller transact in ETH or any ERC-20 token without trusting each other or a centralized intermediary. Funds are locked in the contract when an order is created and only released once the order reaches an agreed-upon state.",
-        ],
-      },
-      {
-        heading: "Architecture",
-        body: [
-          "The protocol is built around an order lifecycle: created, funded, delivered, and settled or disputed. Each transition is guarded by state-based authorization, so only the party permitted to act at that stage can move the order forward.",
-          "Timeout settlement gives either party a way out if the other stops responding — after a configured window, the order can be settled automatically based on its last known state, rather than leaving funds locked indefinitely.",
-        ],
-      },
-      {
-        heading: "Smart Contract Design",
-        body: [
-          "Payments follow the pull-payments pattern: rather than pushing funds to a recipient during a state transition, the contract records what each address is owed and lets them withdraw it themselves. This avoids failure modes tied to unexpected recipient behavior during a transfer.",
-          "ERC-20 transfers go through OpenZeppelin's SafeERC20, and every transfer is checked against the contract's own balance delta before and after the call, so the accounting reflects what was actually received rather than what was requested.",
-        ],
-      },
-      {
-        heading: "Security Decisions",
-        body: [
-          "State-based authorization means every external function checks the order's current state before executing, closing off paths where a function could be called out of sequence.",
-          "Combining pull payments with balance-delta validation is a deliberate choice to reduce the surface area for reentrancy and for tokens with non-standard transfer behavior (fee-on-transfer, rebasing, etc.).",
-        ],
-      },
-      {
-        heading: "Testing",
-        body: [
-          "The contract logic is exercised with Foundry, covering the order lifecycle, the timeout-settlement path, and ERC-20 edge cases alongside the plain-ETH flow.",
-        ],
-      },
-      {
-        heading: "Frontend",
-        body: [
-          "A React interface surfaces order state, wallet connection, and the actions available at each stage of an order, so a user only sees the transitions that are actually valid for them to take.",
-        ],
-      },
-      {
-        heading: "Deployment",
-        body: [
-          "Contracts are deployed and verified via a Foundry-based scripting workflow, targeting Ethereum testnets during development.",
-        ],
-      },
-    ],
-  },
-  {
-    number: "02",
     slug: "nextkey",
     name: "NEXTKEY",
+    image: "/nextkey-homepage.png",
     title: "NEXTKEY: NON-CUSTODIAL CRYPTO INHERITANCE",
     summary:
       "A dead-man's-switch protocol for trustless digital asset inheritance. Ensures secure transfer of funds to beneficiaries after a predefined period of inactivity.",
