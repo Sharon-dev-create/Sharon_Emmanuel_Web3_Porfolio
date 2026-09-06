@@ -14,6 +14,7 @@ export type Project = {
   concepts: string[];
   github: string;
   liveUrl?: string;
+  imageHref?: string;
   sections: CaseStudySection[];
 };
 
@@ -28,6 +29,7 @@ export const projects: Project[] = [
       "A dead-man's-switch protocol for trustless digital asset inheritance. Ensures secure transfer of funds to beneficiaries after a predefined period of inactivity.",
     tags: ["SOLIDITY", "HARDHAT", "ERC-20"],
     liveUrl: "/projects/nextkey",
+    imageHref: "https://nextkey-dapp.vercel.app/",
     concepts: [
       "VaultFactory",
       "Beneficiaries",
@@ -39,7 +41,6 @@ export const projects: Project[] = [
       "Time-based state transitions",
     ],
     github: "https://github.com/Sharon-dev-create",
-    // liveUrl: "https://nextkey-dapp.vercel.app/",
     sections: [
       {
         heading: "Overview",

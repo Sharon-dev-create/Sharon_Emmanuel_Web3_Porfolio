@@ -46,7 +46,7 @@ export default function ProjectRow({
       <ImagePlaceholder
         label={`FIG. ${project.number} / ${project.name}`}
         image={project.image}
-        href={project.liveUrl}
+        href={project.imageHref ?? project.liveUrl}
         className="md:col-span-5 mt-12 md:mt-0 h-64 md:h-auto"
       />
     </div>
