@@ -39,6 +39,7 @@ export const projects: Project[] = [
       "Time-based state transitions",
     ],
     github: "https://github.com/Sharon-dev-create",
+    // liveUrl: "https://nextkey-dapp.vercel.app/",
     sections: [
       {
         heading: "Overview",
@@ -113,7 +114,7 @@ export const projects: Project[] = [
       "Wallet integration",
     ],
     github: "https://github.com/Sharon-dev-create",
-    liveUrl: "https://nextkey-dapp.vercel.app/",
+    liveUrl: "https://crowdfunding-d-app-omega.vercel.app/",
     sections: [
       {
         heading: "Overview",
