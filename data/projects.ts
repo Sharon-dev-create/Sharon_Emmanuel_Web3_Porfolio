@@ -27,6 +27,7 @@ export const projects: Project[] = [
     summary:
       "A dead-man's-switch protocol for trustless digital asset inheritance. Ensures secure transfer of funds to beneficiaries after a predefined period of inactivity.",
     tags: ["SOLIDITY", "HARDHAT", "ERC-20"],
+    liveUrl: "/projects/nextkey",
     concepts: [
       "VaultFactory",
       "Beneficiaries",
@@ -112,7 +113,7 @@ export const projects: Project[] = [
       "Wallet integration",
     ],
     github: "https://github.com/Sharon-dev-create",
-    liveUrl: "https://crowdfunding-d-app-omega.vercel.app/",
+    liveUrl: "https://nextkey-dapp.vercel.app/",
     sections: [
       {
         heading: "Overview",
