@@ -11,6 +11,16 @@ export default function Hero() {
           <Eyebrow>01/ INTRO</Eyebrow>
         </div>
         <div className="md:col-span-8 flex flex-col gap-12">
+          <div className="flex flex-wrap gap-8">
+            <ArrowLink href="/contact">HIRE ME</ArrowLink>
+            <ArrowLink href="/Sharon_Emmanuel_Resume.pdf" download>
+              DOWNLOAD RESUME
+            </ArrowLink>
+            <ArrowLink href="#work">VIEW WORK</ArrowLink>
+            <ArrowLink href={social.github} external>
+              GITHUB
+            </ArrowLink>
+          </div>
           <h1 className="font-display text-headline-mobile md:text-display">
             FULL-STACK WEB3 DEVELOPER
           </h1>
@@ -21,16 +31,6 @@ export default function Hero() {
             applications to smart contracts and on-chain integrations, I focus on turning complex ideas into products that feel intuitive, perform reliably, and work beautifully.
 
           </p>
-          <div className="flex flex-wrap gap-8 mt-8">
-            <ArrowLink href="/contact">HIRE ME</ArrowLink>
-            <ArrowLink href="/Sharon_Emmanuel_Resume.pdf" download>
-              DOWNLOAD RESUME
-            </ArrowLink>
-            <ArrowLink href="#work">VIEW WORK</ArrowLink>
-            <ArrowLink href={social.github} external>
-              GITHUB
-            </ArrowLink>
-          </div>
         </div>
       </div>
 
