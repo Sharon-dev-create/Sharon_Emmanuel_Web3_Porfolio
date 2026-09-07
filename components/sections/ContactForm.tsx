@@ -6,15 +6,16 @@ import { social } from "@/data/social";
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [subject, setSubject] = useState("");
+  const [details, setDetails] = useState("");
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`Project inquiry from ${name || "your site"}`);
+    const encodedSubject = encodeURIComponent(subject || `Hire inquiry from ${name || "a potential client"}`);
     const body = encodeURIComponent(
-      `${message}\n\n— ${name}\n${email}`
+      `Name: ${name}\nEmail: ${email}\n\n${details}`
     );
-    window.location.href = `mailto:${social.email}?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:${social.email}?subject=${encodedSubject}&body=${body}`;
   }
 
   return (
@@ -41,6 +42,25 @@ export default function ContactForm() {
       <div className="relative">
         <label
           className="block font-mono text-label text-foreground mb-2 uppercase tracking-widest"
+          htmlFor="subject"
+        >
+          Subject
+        </label>
+        <input
+          id="subject"
+          name="subject"
+          type="text"
+          required
+          value={subject}
+          onChange={(e) => setSubject(e.target.value)}
+          placeholder="e.g. Smart contract development opportunity"
+          className="w-full bg-transparent border-0 border-b border-editorial-border px-0 py-4 font-body text-body-md text-foreground placeholder:text-muted focus:outline-none focus:border-b-accent-green"
+        />
+      </div>
+
+      <div className="relative">
+        <label
+          className="block font-mono text-label text-foreground mb-2 uppercase tracking-widest"
           htmlFor="email"
         >
           Email
@@ -60,18 +80,18 @@ export default function ContactForm() {
       <div className="relative">
         <label
           className="block font-mono text-label text-foreground mb-2 uppercase tracking-widest"
-          htmlFor="message"
+          htmlFor="details"
         >
-          Project Topic
+          Details
         </label>
         <textarea
-          id="message"
-          name="message"
+          id="details"
+          name="details"
           required
-          rows={4}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Describe the protocol or smart contract requirements..."
+          rows={6}
+          value={details}
+          onChange={(e) => setDetails(e.target.value)}
+          placeholder="Tell me about the project, timeline, scope, and what you need built..."
           className="w-full bg-transparent border-0 border-b border-editorial-border px-0 py-4 font-body text-body-md text-foreground placeholder:text-muted focus:outline-none focus:border-b-accent-green resize-none"
         />
       </div>

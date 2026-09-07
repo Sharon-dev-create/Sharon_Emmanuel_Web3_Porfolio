@@ -21,7 +21,11 @@ export default function Hero() {
             applications to smart contracts and on-chain integrations, I focus on turning complex ideas into products that feel intuitive, perform reliably, and work beautifully.
 
           </p>
-          <div className="flex gap-8 mt-8">
+          <div className="flex flex-wrap gap-8 mt-8">
+            <ArrowLink href="/contact">HIRE ME</ArrowLink>
+            <ArrowLink href="/Sharon_Emmanuel_Resume.pdf" download>
+              DOWNLOAD RESUME
+            </ArrowLink>
             <ArrowLink href="#work">VIEW WORK</ArrowLink>
             <ArrowLink href={social.github} external>
               GITHUB

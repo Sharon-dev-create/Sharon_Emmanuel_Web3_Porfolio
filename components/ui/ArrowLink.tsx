@@ -5,11 +5,17 @@ export default function ArrowLink({
   children,
   external = false,
   className = "",
+  download,
+  target,
+  rel,
 }: {
   href: string;
   children: React.ReactNode;
   external?: boolean;
   className?: string;
+  download?: boolean | string;
+  target?: string;
+  rel?: string;
 }) {
   const content = (
     <>
@@ -24,14 +30,26 @@ export default function ArrowLink({
 
   if (external) {
     return (
-      <a href={href} target="_blank" rel="noreferrer" className={classes}>
+      <a
+        href={href}
+        target={target ?? "_blank"}
+        rel={rel ?? "noreferrer"}
+        download={download || undefined}
+        className={classes}
+      >
         {content}
       </a>
     );
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link
+      href={href}
+      className={classes}
+      target={target}
+      rel={rel}
+      download={download || undefined}
+    >
       {content}
     </Link>
   );

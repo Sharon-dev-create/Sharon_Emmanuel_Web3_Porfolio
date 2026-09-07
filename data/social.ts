@@ -6,5 +6,5 @@ export const social = {
   github: "https://github.com/Sharon-dev-create",
   email: "sharonemma2000@gmail.com",
   phones: ["09138122704", "09136025092"],
-  location: "Based in Nigeria",
+  location: "Based in Nigeria || Works Globally",
 };
