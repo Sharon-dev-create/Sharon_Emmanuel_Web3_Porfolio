@@ -19,7 +19,7 @@ export default function ContactPage() {
           </h1>
           <Divider className="mb-12" />
           <p className="font-body text-body-lg text-muted-variant max-w-3xl mb-16">
-            Open to Web3 development opportunities, protocol engineering work
+            Open to Web3 development opportunities,Frontend,I need  protocol engineering work
             and interesting projects.
           </p>
           <ContactForm />
