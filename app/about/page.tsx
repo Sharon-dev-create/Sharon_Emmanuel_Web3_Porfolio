@@ -46,12 +46,12 @@ export default function AboutPage() {
           </div>
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <p>
-              Sharon Emmanuel is a Full-Stack Web3 Developer focused on building modern web applications and decentralized systems.
-              He works across the stack, from crafting polished, responsive interfaces with React, Next.js, TypeScript, and Tailwind CSS, 
-              to designing and testing Solidity smart contracts with Foundry and Hardhat. He also builds application backends and data layers with 
-              Supabase and PostgreSQL, connecting frontend experiences to both traditional and blockchain infrastructure.
-              His work sits at the intersection of frontend engineering and Web3, with a focus on building products that are technically
-               sound, visually refined, and genuinely usable.
+              Sharon Emmanuel is a Full-Stack Web3 Developer with 3+ years of experience building modern web applications and
+              decentralized systems. He works across the stack, from crafting polished, responsive interfaces with React,
+              Next.js, TypeScript, and Tailwind CSS, to designing and testing Solidity smart contracts with Foundry and Hardhat.
+              He also builds application backends and data layers with Supabase and PostgreSQL, connecting frontend
+              experiences to both traditional and blockchain infrastructure. His work sits at the intersection of frontend
+              engineering and Web3, with a focus on building products that are technically sound, visually refined, and genuinely usable.
             </p>
             <p>
               Sharon works across the stack — from contract architecture and

@@ -26,10 +26,10 @@ export default function Hero() {
           </h1>
           <TerminalTypewriter />
           <p className="font-body text-body-lg max-w-2xl text-foreground/80">
-            Building refined digital experiences and decentralized applications that bridge thoughtful 
-            frontend design with blockchain technology. From responsive interfaces and interactive web 
-            applications to smart contracts and on-chain integrations, I focus on turning complex ideas into products that feel intuitive, perform reliably, and work beautifully.
-
+            I bring 3+ years of experience building refined digital experiences and decentralized applications
+            that bridge thoughtful frontend design with blockchain technology. From responsive interfaces and
+            interactive web applications to smart contracts and on-chain integrations, I focus on turning complex
+            ideas into products that feel intuitive, perform reliably, and work beautifully.
           </p>
         </div>
       </div>
