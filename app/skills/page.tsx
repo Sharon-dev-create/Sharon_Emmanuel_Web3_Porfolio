@@ -8,25 +8,6 @@ export const metadata: Metadata = {
 export default function SkillsPage() {
   return (
     <div className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
-      <header className="border-b border-editorial-border pb-5">
-        <div className="flex items-center justify-between">
-          <div className="font-display text-[2.5rem] leading-none tracking-[-0.06em] text-foreground md:text-[3rem]">
-            0xbash
-          </div>
-
-          <button
-            type="button"
-            aria-label="Open menu"
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-editorial-border bg-white/40 transition hover:bg-white/80"
-          >
-            <span className="flex flex-col gap-1.5">
-              <span className="block h-0.5 w-4 bg-foreground" />
-              <span className="block h-0.5 w-4 bg-foreground" />
-              <span className="block h-0.5 w-4 bg-foreground" />
-            </span>
-          </button>
-        </div>
-      </header>
 
       <main className="pt-8 md:pt-12">
         <section className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:items-end">
@@ -34,8 +15,8 @@ export default function SkillsPage() {
             04 - MY TECH STACK &amp; TOOLS
           </div>
 
-          <div className="max-w-[780px]">
-            <h1 className="font-display text-[2.8rem] leading-[0.95] tracking-[-0.06em] text-foreground md:text-[4.2rem] xl:text-[5.25rem]">
+          <div className="max-w-[720px]">
+            <h1 className="font-display text-[2.8rem] leading-[0.95] tracking-[-0.06em] text-foreground md:text-[4.2rem] xl:text-[4rem]">
               Technologies, frameworks,
               <br />
               and tools i work with
