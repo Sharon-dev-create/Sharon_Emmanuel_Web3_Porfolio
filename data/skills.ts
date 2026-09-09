@@ -76,21 +76,10 @@ export const skillCards: SkillCard[] = [
     badgeClass: "bg-[#c7dcff] text-[#1d4ed8]",
   },
   {
-    name: "Postman",
-    badge: "P",
-    badgeClass: "bg-[#f7d5a9] text-[#7c2d12]",
-  },
-  {
     name: "Flutter",
     badge: "F",
     badgeClass: "bg-[#bfeafc] text-[#0284c7]",
   },
-  {
-    name: "Angular",
-    badge: "A",
-    badgeClass: "bg-[#ffc9db] text-[#9f1239]",
-  },
-  
   {
     name: "Supabase",
     badge: "S",
