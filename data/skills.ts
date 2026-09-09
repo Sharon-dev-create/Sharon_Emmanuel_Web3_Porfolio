@@ -16,11 +16,6 @@ export const skillCards: SkillCard[] = [
     badgeClass: "bg-[#d9f3f8] text-[#0f172a]",
   },
   {
-    name: "React Native",
-    badge: "RN",
-    badgeClass: "bg-[#d9f3f8] text-[#0f172a]",
-  },
-  {
     name: "TypeScript",
     badge: "TS",
     badgeClass: "bg-[#2d6cdf] text-white",
@@ -29,16 +24,6 @@ export const skillCards: SkillCard[] = [
     name: "JavaScript",
     badge: "JS",
     badgeClass: "bg-[#f5dc62] text-[#1f2937]",
-  },
-  {
-    name: "Node.js",
-    badge: "Node",
-    badgeClass: "bg-[#6dba5a] text-white",
-  },
-  {
-    name: "PostgreSQL",
-    badge: "PG",
-    badgeClass: "bg-[#1d4f8f] text-white",
   },
   {
     name: "Tailwind CSS",
@@ -69,11 +54,6 @@ export const skillCards: SkillCard[] = [
     name: "Vercel",
     badge: "▲",
     badgeClass: "bg-[#191919] text-white",
-  },
-  {
-    name: "Prisma",
-    badge: "P",
-    badgeClass: "bg-[#d4ebff] text-[#0f172a]",
   },
   {
     name: "Solidity",
@@ -110,16 +90,7 @@ export const skillCards: SkillCard[] = [
     badge: "A",
     badgeClass: "bg-[#ffc9db] text-[#9f1239]",
   },
-  {
-    name: "Svelte",
-    badge: "S",
-    badgeClass: "bg-[#ffd0c4] text-[#c2410c]",
-  },
-  {
-    name: "Nuxt",
-    badge: "N",
-    badgeClass: "bg-[#d9f8e8] text-[#0f766e]",
-  },
+  
   {
     name: "Supabase",
     badge: "S",
