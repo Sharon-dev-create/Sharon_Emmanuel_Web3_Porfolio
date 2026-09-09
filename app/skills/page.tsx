@@ -10,7 +10,7 @@ export default function SkillsPage() {
     <div className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
 
       <main className="pt-8 md:pt-12">
-        <section className="grid gap-6 md:grid-cols-[minmax(0,1fr)_minmax(0,1.6fr)] md:items-end">
+        <section className="grid gap-4 md:gap-6">
           <div className="font-mono text-label uppercase tracking-[0.08em] text-foreground/70">
             04 - MY TECH STACK &amp; TOOLS
           </div>
