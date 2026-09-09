@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { social } from "@/data/social";
 
 export default function Footer() {
@@ -16,6 +17,12 @@ export default function Footer() {
           >
             GitHub
           </a>
+          <Link
+            href="/faq"
+            className="text-muted-variant hover:text-foreground transition-colors duration-300 underline-offset-4 hover:underline"
+          >
+            FAQ
+          </Link>
           <a
             href={`mailto:${social.email}`}
             className="text-muted-variant hover:text-foreground transition-colors duration-300 underline-offset-4 hover:underline"
