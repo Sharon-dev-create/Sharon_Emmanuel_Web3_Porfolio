@@ -19,7 +19,7 @@ export default function Header() {
       <header className="w-full sticky top-0 z-40 bg-background border-b border-editorial-border">
         <div className="flex justify-between items-center w-full px-page-mobile md:px-page-desktop py-8 max-w-screen-2xl mx-auto">
           <Link
-            href="/"
+            href="/#home"
             className="flex items-center gap-4 hover:opacity-70 transition-opacity duration-300"
           >
             <span className="material-symbols-outlined text-2xl leading-none">

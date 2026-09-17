@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function FAQPage() {
   return (
-    <div className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
+    <div id="faq" className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
       <main className="pt-8 md:pt-12">
         <section className="grid gap-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:items-start">
           <div className="max-w-[520px]">

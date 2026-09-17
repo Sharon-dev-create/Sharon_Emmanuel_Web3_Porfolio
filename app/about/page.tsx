@@ -15,7 +15,7 @@ const timeline = [
 
 export default function AboutPage() {
   return (
-    <div className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop pt-24 pb-section">
+    <div id="about" className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop pt-24 pb-section">
       {/* Hero */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section">
         <div className="md:col-span-7 md:col-start-6">

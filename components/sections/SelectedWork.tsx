@@ -29,7 +29,7 @@ export default function SelectedWork() {
 
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter pt-12">
         <div className="md:col-start-3 md:col-span-8">
-          <ArrowLink href="/projects">VIEW ALL WORK</ArrowLink>
+          <ArrowLink href="#about">VIEW ALL WORK</ArrowLink>
         </div>
       </div>
     </section>

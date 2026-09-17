@@ -5,14 +5,14 @@ import TerminalTypewriter from "@/components/sections/TerminalTypewriter";
 
 export default function Hero() {
   return (
-    <section className="px-page-mobile md:px-page-desktop pt-32 md:pt-48 pb-section">
+    <section id="home" className="px-page-mobile md:px-page-desktop pt-32 md:pt-48 pb-section">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div className="md:col-span-2">
           <Eyebrow>01/ INTRO</Eyebrow>
         </div>
         <div className="md:col-span-8 flex flex-col gap-12">
           <div className="flex flex-wrap gap-8">
-            <ArrowLink href="/contact">HIRE ME</ArrowLink>
+            <ArrowLink href="#contact">HIRE ME</ArrowLink>
             <ArrowLink href="/Sharon_Emmanuel_Resume.pdf" download>
               DOWNLOAD RESUME
             </ArrowLink>

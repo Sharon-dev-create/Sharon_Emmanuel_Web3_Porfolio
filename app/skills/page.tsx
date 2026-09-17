@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function SkillsPage() {
   return (
-    <div className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
+    <div id="skills" className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
 
       <main className="pt-8 md:pt-12">
         <section className="grid gap-4 md:gap-6">

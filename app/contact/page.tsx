@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <div className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop py-section">
+    <div id="contact" className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop py-section">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div className="hidden md:block md:col-span-2" />
         <div className="col-span-1 md:col-span-8">

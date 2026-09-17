@@ -18,7 +18,7 @@ export default function Footer() {
             GitHub
           </a>
           <Link
-            href="/faq"
+            href="#faq"
             className="text-muted-variant hover:text-foreground transition-colors duration-300 underline-offset-4 hover:underline"
           >
             FAQ
