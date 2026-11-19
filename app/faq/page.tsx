@@ -3,6 +3,7 @@ import FaqAccordion from "@/components/faq/FaqAccordion";
 
 export const metadata: Metadata = {
   title: "FAQ — Sharon Emmanuel",
+  description: "Frequently asked questions about Sharon Emmanuel's software engineering and Web3 projects.",
 };
 
 export default function FAQPage() {

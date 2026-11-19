@@ -8,6 +8,7 @@ export type Project = {
   slug: string;
   name: string;
   image?: string;
+  architectureImage?: string;
   title: string;
   summary: string;
   tags: string[];
@@ -24,6 +25,7 @@ export const projects: Project[] = [
     slug: "disburse",
     name: "DISBURSE",
     image: "/disburse-dashboard.png",
+    architectureImage: "/disburse-architecture.svg",
     title: "DISBURSE: NEAR PAYOUT ACCOUNTING FOUNDATION",
     summary:
       "A development foundation for teams that need campaign spending controls and a clear record of each payout. It combines a NEAR contract, a read-only TypeScript service foundation, PostgreSQL persistence, and a demo dashboard.",

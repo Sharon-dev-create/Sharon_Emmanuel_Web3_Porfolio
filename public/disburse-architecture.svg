@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760" role="img" aria-labelledby="title desc">
+  <title id="title">Disburse system boundaries</title>
+  <desc id="desc">Diagram showing the Next.js dashboard calling the read-only execution service, which reads the NEAR contract and persists operational records in PostgreSQL. The contract is authoritative for accounting. Cross-chain execution and independent destination-chain proof are not implemented.</desc>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#62665f"/>
+    </marker>
+    <marker id="arrowDashed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a64b2a"/>
+    </marker>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#242722" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="760" fill="#f8f7f3"/>
+
+  <!-- Header -->
+  <text x="70" y="54" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2.4">DISBURSE · SYSTEM BOUNDARIES</text>
+  <g font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" fill="#62665f">
+    <line x1="1160" y1="49" x2="1202" y2="49" stroke="#62665f" stroke-width="1.6"/>
+    <text x="1212" y="53">Implemented foundation</text>
+    <line x1="1362" y1="49" x2="1404" y2="49" stroke="#a64b2a" stroke-width="1.6" stroke-dasharray="6 5"/>
+    <text x="1414" y="53">Not implemented</text>
+  </g>
+
+  <!-- Frontend card -->
+  <g filter="url(#softShadow)">
+    <rect x="60" y="130" width="380" height="360" rx="16" fill="#ffffff" stroke="#e7e5de"/>
+  </g>
+  <path d="M 60 146 A 16 16 0 0 1 76 130 H 424 A 16 16 0 0 1 440 146 V 186 H 60 Z" fill="#ede9df"/>
+  <text x="88" y="166" fill="#242722" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">NEXT.JS DASHBOARD</text>
+  <text x="88" y="214" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13">Marketing site + demo dashboard</text>
+
+  <g font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#242722">
+    <circle cx="94" cy="254" r="3" fill="#246b50"/>
+    <text x="110" y="258">Server-rendered pages</text>
+    <circle cx="94" cy="290" r="3" fill="#246b50"/>
+    <text x="110" y="294">Demo campaign &amp; payout flows</text>
+    <circle cx="94" cy="326" r="3" fill="#246b50"/>
+    <text x="110" y="330">Server-side read panels</text>
+  </g>
+
+  <rect x="88" y="372" width="324" height="38" rx="8" fill="#f8f7f3" stroke="#e7e5de"/>
+  <text x="250" y="396" text-anchor="middle" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600">No wallet · no transaction submission</text>
+  <text x="88" y="452" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11">Demo forms do not persist data.</text>
+
+  <!-- Execution service card -->
+  <g filter="url(#softShadow)">
+    <rect x="560" y="110" width="440" height="430" rx="16" fill="#ffffff" stroke="#e7e5de"/>
+  </g>
+  <path d="M 560 126 A 16 16 0 0 1 576 110 H 984 A 16 16 0 0 1 1000 126 V 166 H 560 Z" fill="#ede9df"/>
+  <text x="588" y="146" fill="#242722" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">EXECUTION SERVICE</text>
+  <text x="588" y="194" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13">TypeScript foundation · read-only</text>
+
+  <g font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="600">
+    <rect x="588" y="216" width="184" height="48" rx="9" fill="#f8f7f3" stroke="#e7e5de"/>
+    <text x="680" y="245" text-anchor="middle" fill="#242722">Read-only API</text>
+
+    <rect x="788" y="216" width="184" height="48" rx="9" fill="#f8f7f3" stroke="#e7e5de"/>
+    <text x="880" y="245" text-anchor="middle" fill="#242722">NEAR discovery</text>
+
+    <rect x="588" y="278" width="184" height="48" rx="9" fill="#f8f7f3" stroke="#e7e5de"/>
+    <text x="680" y="307" text-anchor="middle" fill="#242722">Dry 1Click quotes</text>
+
+    <rect x="788" y="278" width="184" height="48" rx="9" fill="#f8f7f3" stroke="#e7e5de"/>
+    <text x="880" y="307" text-anchor="middle" fill="#242722">PostgreSQL repos</text>
+  </g>
+
+  <text x="588" y="356" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11">No signer, worker, retries, or transaction submission.</text>
+
+  <!-- PostgreSQL cylinder -->
+  <g transform="translate(684 386)">
+    <path d="M 0 14 V 82 A 96 14 0 0 0 192 82 V 14" fill="#f8f7f3" stroke="#246b50" stroke-opacity="0.55"/>
+    <ellipse cx="96" cy="14" rx="96" ry="14" fill="#e7f0e8" stroke="#246b50" stroke-opacity="0.55"/>
+    <text x="96" y="52" text-anchor="middle" fill="#246b50" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">POSTGRESQL</text>
+    <text x="96" y="72" text-anchor="middle" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10">operational records</text>
+  </g>
+
+  <!-- NEAR contract card -->
+  <g filter="url(#softShadow)">
+    <rect x="1160" y="130" width="380" height="360" rx="16" fill="#246b50"/>
+  </g>
+  <text x="1188" y="166" fill="#f8f7f3" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.2">NEAR CONTRACT</text>
+  <text x="1188" y="194" fill="#d7e3bd" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13">Authoritative accounting</text>
+  <line x1="1188" y1="212" x2="1512" y2="212" stroke="#f8f7f3" stroke-opacity="0.22"/>
+
+  <g font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="13" fill="#f8f7f3">
+    <circle cx="1194" cy="250" r="3" fill="#d7e3bd"/>
+    <text x="1210" y="254">Campaign lifecycle &amp; budgets</text>
+    <circle cx="1194" cy="286" r="3" fill="#d7e3bd"/>
+    <text x="1210" y="290">Funding &amp; payout reservations</text>
+    <circle cx="1194" cy="322" r="3" fill="#d7e3bd"/>
+    <text x="1210" y="326">Roles &amp; idempotency</text>
+    <circle cx="1194" cy="358" r="3" fill="#d7e3bd"/>
+    <text x="1210" y="362">Verifier-attested settlement</text>
+  </g>
+
+  <rect x="1188" y="404" width="324" height="38" rx="8" fill="#1c5a42"/>
+  <text x="1350" y="428" text-anchor="middle" fill="#f8f7f3" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11" font-weight="600">On-chain source of truth</text>
+  <text x="1188" y="472" fill="#d7e3bd" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11">Stores expected values; does not move funds.</text>
+
+  <!-- Arrows -->
+  <line x1="440" y1="310" x2="548" y2="310" stroke="#62665f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="494" y="294" text-anchor="middle" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600">authenticated</text>
+  <text x="494" y="334" text-anchor="middle" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600">read API</text>
+
+  <line x1="1000" y1="310" x2="1148" y2="310" stroke="#62665f" stroke-width="1.6" marker-end="url(#arrow)"/>
+  <text x="1074" y="294" text-anchor="middle" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600">read-only</text>
+  <text x="1074" y="334" text-anchor="middle" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600">views</text>
+
+  <!-- Destination chain boundary -->
+  <line x1="1350" y1="490" x2="1350" y2="598" stroke="#a64b2a" stroke-width="1.6" stroke-dasharray="6 5" marker-end="url(#arrowDashed)"/>
+  <text x="1362" y="536" fill="#a64b2a" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10" font-weight="600">verifier attestation only</text>
+  <text x="1362" y="552" fill="#a64b2a" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10">no independent proof</text>
+
+  <rect x="1160" y="610" width="380" height="80" rx="12" fill="none" stroke="#a64b2a" stroke-width="1.6" stroke-dasharray="7 6"/>
+  <text x="1350" y="642" text-anchor="middle" fill="#a64b2a" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">DESTINATION CHAIN</text>
+  <text x="1350" y="666" text-anchor="middle" fill="#a64b2a" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="10">No transfer execution or settlement</text>
+
+  <!-- Footer -->
+  <line x1="70" y1="700" x2="1540" y2="700" stroke="#e7e5de"/>
+  <text x="70" y="728" fill="#62665f" font-family="Inter, 'Helvetica Neue', Arial, sans-serif" font-size="11">Contract state is authoritative. Execution-service and PostgreSQL state are operational records, not proof of delivery or settlement.</text>
+</svg>

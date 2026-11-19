@@ -4,7 +4,7 @@ import ArrowLink from "@/components/ui/ArrowLink";
 import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function SelectedWork() {
-  const featured = projects.slice(0, 3);
+  const featured = projects.slice(0, 2);
 
   return (
     <section className="px-page-mobile md:px-page-desktop pb-section" id="work">

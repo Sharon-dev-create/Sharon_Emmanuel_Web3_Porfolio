@@ -5,7 +5,7 @@ export type SkillGroup = {
 
 export const skillGroups: SkillGroup[] = [
   {
-    title: "Smart contracts & Web3",
+    title: "Blockchain & smart contracts",
     skills: [
       "Solidity, Ethereum & EVM",
       "Rust & NEAR near-sdk",
@@ -17,7 +17,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Frontend & dApps",
+    title: "Frontend engineering",
     skills: [
       "HTML, CSS, JavaScript & TypeScript",
       "React, Next.js & Vite",
@@ -28,7 +28,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Backend & data",
+    title: "Backend & databases",
     skills: [
       "Node.js & TypeScript services",
       "REST APIs & JSON-RPC clients",
@@ -38,7 +38,7 @@ export const skillGroups: SkillGroup[] = [
     ],
   },
   {
-    title: "Testing & tools",
+    title: "Developer tools & infrastructure",
     skills: [
       "Rust and TypeScript unit and integration tests",
       "Foundry local EVM testing",

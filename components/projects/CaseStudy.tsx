@@ -2,6 +2,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import Tag from "@/components/ui/Tag";
 import ArrowLink from "@/components/ui/ArrowLink";
 import ImagePlaceholder from "./ImagePlaceholder";
+import Image from "next/image";
 import type { Project } from "@/data/projects";
 
 export default function CaseStudy({ project }: { project: Project }) {
@@ -43,6 +44,22 @@ export default function CaseStudy({ project }: { project: Project }) {
         href={project.imageHref ?? project.liveUrl}
         className="h-72 md:h-[420px] mb-section"
       />
+
+      {project.architectureImage && (
+        <figure className="mb-section border border-editorial-border bg-white/60 p-4 md:p-8">
+          <Image
+            src={project.architectureImage}
+            alt={`System architecture diagram for ${project.name}`}
+            width={1600}
+            height={760}
+            sizes="(max-width: 768px) 100vw, 80vw"
+            className="h-auto w-full"
+          />
+          <figcaption className="mt-4 font-mono text-label uppercase tracking-widest text-muted">
+            Architecture and trust boundaries · Development foundation
+          </figcaption>
+        </figure>
+      )}
 
       {/* Concepts */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section border-t border-editorial-border pt-12">

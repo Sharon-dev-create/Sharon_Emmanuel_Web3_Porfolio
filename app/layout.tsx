@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://sharon-emmanuel-web3-porfolio.vercel.app"),
   title: "Sharon Emmanuel — Software Engineer, Full-Stack & Web3 Developer",
   description:
     "Software engineer and product builder working across responsive web applications, backend services, databases, and blockchain systems.",

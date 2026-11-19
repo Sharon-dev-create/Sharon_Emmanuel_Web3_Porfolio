@@ -17,9 +17,7 @@ export default function SkillsPage() {
 
           <div className="max-w-[720px]">
             <h1 className="font-display text-[2.8rem] leading-[0.95] tracking-[-0.06em] text-foreground md:text-[4.2rem] xl:text-[4rem]">
-              Engineering across
-              <br />
-              the full stack
+              Engineering across the full stack
             </h1>
           </div>
         </section>

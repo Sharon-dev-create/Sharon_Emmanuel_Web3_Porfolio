@@ -11,7 +11,7 @@ export default function ContactForm() {
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    const encodedSubject = encodeURIComponent(subject || `Hire inquiry from ${name || "a potential client"}`);
+    const encodedSubject = encodeURIComponent(subject || `Software engineering inquiry from ${name || "a potential client"}`);
     const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${details}`
     );
