@@ -4,17 +4,17 @@ import ArrowLink from "@/components/ui/ArrowLink";
 import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function SelectedWork() {
-  const featured = projects.slice(0, 2);
+  const featured = projects.slice(0, 3);
 
   return (
     <section className="px-page-mobile md:px-page-desktop pb-section" id="work">
-      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-24">
+      <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
         <div className="md:col-span-2">
-          <Eyebrow>02/ PORTFOLIO</Eyebrow>
+            <Eyebrow>01/ SELECTED WORK</Eyebrow>
         </div>
         <div className="md:col-span-10">
           <h2 className="font-display text-headline-mobile md:text-headline-lg">
-            SELECTED WORK
+            Built across the stack
           </h2>
         </div>
       </div>

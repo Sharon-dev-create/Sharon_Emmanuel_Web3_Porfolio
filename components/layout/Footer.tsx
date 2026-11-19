@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="w-full border-t border-editorial-border mt-auto">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center w-full px-page-mobile md:px-page-desktop py-12 max-w-screen-2xl mx-auto gap-element">
         <div className="font-mono text-label uppercase tracking-widest text-foreground">
-          © 2024 {social.name.toUpperCase()} / SOLIDITY DEVELOPER
+          © 2026 {social.name.toUpperCase()} / SOFTWARE ENGINEER
         </div>
         <div className="flex flex-wrap gap-8 font-mono text-label uppercase">
           <a
