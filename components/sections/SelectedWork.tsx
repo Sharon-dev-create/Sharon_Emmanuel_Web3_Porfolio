@@ -24,6 +24,7 @@ export default function SelectedWork() {
           key={project.slug}
           project={project}
           border={i === featured.length - 1 ? "top-bottom" : "top"}
+          featured={i === 0}
         />
       ))}
 
