@@ -42,43 +42,43 @@ export const projects: Project[] = [
       {
         heading: "The problem",
         body: [
-          "Teams running payout campaigns need to control what they spend and understand what happened to each payout. Disburse explores those controls across a NEAR contract, an execution-service foundation, and a dashboard.",
+          "Teams paying contributors across blockchain networks need a reliable way to set budgets, coordinate payout states, and understand what evidence supports each outcome. Disburse is designed to make those controls and records explicit.",
         ],
       },
       {
-        heading: "Contract accounting",
+        heading: "Solution and contribution",
         body: [
-          "The Rust contract uses near-sdk to model campaign funding, budget caps, payout reservations, access roles, pause controls, and payout lifecycle records. NEP-141 funding and finalized contract events are part of the implemented contract and discovery work.",
+          "I am building this as a NEAR based payout accounting foundation. Its Rust near-sdk contract implements campaign funding, budget caps, payout reservations, role controls, pause controls, idempotency, and payout lifecycle records. NEP-141 funding is allowlisted and finalized event discovery is implemented.",
         ],
       },
       {
-        heading: "Service and data",
+        heading: "Service and persistence",
         body: [
-          "The TypeScript service reads contract views and finalized events, with PostgreSQL schemas and migrations for durable execution jobs. The repository implements idempotency, lease-based coordination, and reconciliation components. Current security review evidence identifies unresolved legacy lease-write defects, so the overall review verdict is FAIL.",
+          "The TypeScript service has read-only NEAR views and an authenticated read-only HTTP host. PostgreSQL schemas and migrations support durable jobs, idempotency, lease coordination, and reconciliation components. It does not run a production worker, signer, or live payout submission.",
         ],
       },
       {
-        heading: "Dashboard",
+        heading: "Dashboard and architecture",
         body: [
-          "The Next.js dashboard presents campaign, payout, and recipient information using demo-oriented flows. Its displayed records are illustrative. The current workspace is read-only, and campaign creation, funding, and payout initiation are unavailable.",
+          "The Next.js demo dashboard presents campaign, payout, and recipient information. Its records are illustrative, and campaign creation, funding, and payout initiation are unavailable. The architecture is contract state and finalized event discovery flowing through a read-only TypeScript service into PostgreSQL records and dashboard read views.",
         ],
       },
       {
-        heading: "NEAR Intents quote preview",
+        heading: "Engineering challenges and quote preview",
         body: [
-          "A 1Click adapter requests EXACT_OUTPUT quotes with dry: true and validates returned quote fields against the payout request and input budget. The adapter is tested with deterministic mock responses. A dry quote does not reserve liquidity or execute a payout, and the live quote route has not been tested.",
+          "The design addresses budget enforcement, separate authorization roles, durable idempotent jobs, lease coordination, and explicit reconciliation evidence. A 1Click adapter requests EXACT_OUTPUT quotes with dry: true and validates response fields and input budget using mock responses. A dry quote does not reserve liquidity or execute a payout, and the live quote route has not been tested.",
         ],
       },
       {
-        heading: "Verification and status",
+        heading: "Current status",
         body: [
-          "The repository records passing local Rust contract, service, and PostgreSQL regression runs, alongside a failing independent security review of legacy job lease paths. No production deployment, live cross-chain payout, or completed end-to-end settlement is established. Testnet execution remains blocked in the latest readiness assessment.",
+          "Local Rust contract, service, and PostgreSQL tests have passed in recorded regression runs. The latest readiness evidence reports fresh checks passing in M5-F.1E, while controlled Testnet execution still requires separately approved account, deployment, and operational gates. There is no production deployment, live cross-chain payout submission, or completed end-to-end settlement. The dashboard is a local demo, not a live operational demonstration.",
         ],
       },
     ],
   },
   {
-    number: "01",
+    number: "02",
     slug: "nextkey",
     name: "NEXTKEY",
     image: "/nextkey-homepage.png",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: "02",
+    number: "03",
     slug: "crowdfunding",
     name: "CROWDFUNDING DAPP",
     image: "/Crowdfunding-dapp.png",
@@ -208,7 +208,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: "03",
+    number: "04",
     slug: "nexus",
     name: "NEXUS DEFI STAKING",
     image: "/nexus-homepage.png",

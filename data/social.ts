@@ -1,8 +1,8 @@
 export const social = {
   name: "Sharon Emmanuel",
-  role: "Web3 Developer & Software Engineering Instructor",
+  role: "Software Engineer | Full-Stack & Web3 Developer | Product Builder",
   positioning:
-    "I build Web3 products across smart contracts, services, and interfaces, and teach software engineering foundations.",
+    "I build software products across frontend, backend, databases, and blockchain infrastructure.",
   github: "https://github.com/Sharon-dev-create",
   email: "sharonemma2000@gmail.com",
   phones: ["09138122704", "09136025092"],

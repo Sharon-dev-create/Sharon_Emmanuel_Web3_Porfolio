@@ -49,7 +49,7 @@ export default function AboutPage() {
           </div>
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <p>
-              I build Web3 applications from contract logic through backend services to user-facing dashboards. My Ethereum projects cover inheritance vaults, escrow, crowdfunding, and staking. With Disburse, I am developing a NEAR payout accounting foundation using Rust, near-sdk, a TypeScript service, PostgreSQL, and a Next.js demo dashboard.
+              I like working across the seams between systems: the contract rule, the service that reads it, the data that records it, and the interface someone uses. My projects range from Ethereum inheritance, escrow, crowdfunding, and staking to Disburse, a NEAR payout accounting foundation. I studied Geophysics, and that shift in disciplines keeps me curious about how complex systems behave.
             </p>
             <p>
               At Blockfuse Labs, I teach Software Engineering Foundations, including web fundamentals, Linux and Bash, Git and GitHub, semantic HTML, responsive CSS, and JavaScript. I prepare live coding exercises and guide students as they build portfolio projects and learn collaborative workflows.

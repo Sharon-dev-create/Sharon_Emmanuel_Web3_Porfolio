@@ -5,9 +5,23 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Sharon Emmanuel — Web3 Developer & Software Engineering Instructor",
+  title: "Sharon Emmanuel — Software Engineer, Full-Stack & Web3 Developer",
   description:
-    "Web3 developer building smart contracts, services, and interfaces, and software engineering foundations instructor at Blockfuse Labs.",
+    "Software engineer and product builder working across responsive web applications, backend services, databases, and blockchain systems.",
+  openGraph: {
+    title: "Sharon Emmanuel — Software Engineer & Web3 Developer",
+    description:
+      "Building digital products across frontend, backend, and blockchain infrastructure.",
+    type: "website",
+    images: ["/Portfolio-Img.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sharon Emmanuel — Software Engineer & Web3 Developer",
+    description:
+      "Building digital products across frontend, backend, and blockchain infrastructure.",
+    images: ["/Portfolio-Img.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

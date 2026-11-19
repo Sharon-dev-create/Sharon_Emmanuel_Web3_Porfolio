@@ -8,8 +8,7 @@ const links = [
   { number: "02", label: "ABOUT", href: "/#about" },
   { number: "03", label: "SKILLS", href: "/#skills" },
   { number: "04", label: "EXPERIENCE", href: "/#experience" },
-  { number: "05", label: "ABOUT", href: "/#about" },
-  { number: "06", label: "CONTACT", href: "/#contact" },
+  { number: "05", label: "CONTACT", href: "/#contact" },
 ];
 
 export default function NavOverlay({

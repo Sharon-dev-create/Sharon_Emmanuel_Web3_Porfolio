@@ -10,7 +10,7 @@ export default function SelectedWork() {
     <section className="px-page-mobile md:px-page-desktop pb-section" id="work">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
         <div className="md:col-span-2">
-            <Eyebrow>01/ SELECTED WORK</Eyebrow>
+          <Eyebrow>01/ SELECTED WORK</Eyebrow>
         </div>
         <div className="md:col-span-10">
           <h2 className="font-display text-headline-mobile md:text-headline-lg">

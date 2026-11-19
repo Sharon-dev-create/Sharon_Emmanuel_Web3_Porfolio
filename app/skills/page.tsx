@@ -12,14 +12,14 @@ export default function SkillsPage() {
       <main className="pt-8 md:pt-12">
         <section className="grid gap-4 md:gap-6">
           <div className="font-mono text-label uppercase tracking-[0.08em] text-foreground/70">
-            04 - MY TECH STACK &amp; TOOLS
+            02 / ENGINEERING EXPERTISE
           </div>
 
           <div className="max-w-[720px]">
             <h1 className="font-display text-[2.8rem] leading-[0.95] tracking-[-0.06em] text-foreground md:text-[4.2rem] xl:text-[4rem]">
-              Tools I use to build
+              Engineering across
               <br />
-              and teach software
+              the full stack
             </h1>
           </div>
         </section>

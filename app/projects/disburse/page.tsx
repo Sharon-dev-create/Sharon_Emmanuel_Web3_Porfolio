@@ -7,7 +7,10 @@ const SLUG = "disburse";
 
 export function generateMetadata(): Metadata {
   const project = getProject(SLUG);
-  return { title: project ? `${project.name} — Sharon Emmanuel` : "Project" };
+  return {
+    title: project ? `${project.name} — Sharon Emmanuel` : "Project",
+    description: project?.summary,
+  };
 }
 
 export default function ProjectPage() {

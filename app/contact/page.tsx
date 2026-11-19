@@ -13,14 +13,13 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div className="hidden md:block md:col-span-2" />
         <div className="col-span-1 md:col-span-8">
-          <Eyebrow className="block mb-8">03/ CONTACT</Eyebrow>
+          <Eyebrow className="block mb-8">05/ CONTACT</Eyebrow>
           <h1 className="font-display text-headline-mobile md:text-display mb-8 uppercase">
             LET&apos;S CONNECT
           </h1>
           <Divider className="mb-12" />
           <p className="font-body text-body-lg text-muted-variant max-w-3xl mb-16">
-            Open to Web3 development opportunities,Frontend,I need  protocol engineering work
-            and interesting projects.
+            I’m open to software engineering opportunities, freelance development, product collaborations, and Web3 engineering projects.
           </p>
           <ContactForm />
         </div>
