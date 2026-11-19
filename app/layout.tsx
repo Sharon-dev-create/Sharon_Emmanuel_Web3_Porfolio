@@ -5,9 +5,9 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  title: "Sharon Emmanuel — Solidity Smart Contract Developer",
+  title: "Sharon Emmanuel — Web3 Developer & Software Engineering Instructor",
   description:
-    "I build secure, tested Ethereum smart contracts and full-stack Web3 applications.",
+    "Web3 developer building smart contracts, services, and interfaces, and software engineering foundations instructor at Blockfuse Labs.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -8,10 +8,9 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "2024", label: "FRONTEND DEVELOPMENT" },
-  { year: "2024", label: "BLOCKCHAIN DEVELOPMENT" },
-  { year: "2025", label: "SMART CONTRACT ENGINEERING" },
-  { year: "2026", label: "PROTOCOL DEVELOPMENT" },
+  { year: "2024–PRESENT", label: "SOFTWARE ENGINEERING — BLOCKFUSE LABS" },
+  { year: "2024–2026", label: "ETHEREUM DAPPS & SMART CONTRACTS" },
+  { year: "2026", label: "NEAR PROTOCOL DEVELOPMENT" },
 ];
 
 export default function AboutPage() {
@@ -50,17 +49,10 @@ export default function AboutPage() {
           </div>
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <p>
-              Sharon Emmanuel is a Full-Stack Web3 Developer with 3+ years of experience building modern web applications and
-              decentralized systems. He works across the stack, from crafting polished, responsive interfaces with React,
-              Next.js, TypeScript, and Tailwind CSS, to designing and testing Solidity smart contracts with Foundry and Hardhat.
-              He also builds application backends and data layers with Supabase and PostgreSQL, connecting frontend
-              experiences to both traditional and blockchain infrastructure. His work sits at the intersection of frontend
-              engineering and Web3, with a focus on building products that are technically sound, visually refined, and genuinely usable.
+              I build Web3 applications from contract logic through backend services to user-facing dashboards. My Ethereum projects cover inheritance vaults, escrow, crowdfunding, and staking. With Disburse, I am developing a NEAR payout accounting foundation using Rust, near-sdk, a TypeScript service, PostgreSQL, and a Next.js demo dashboard.
             </p>
             <p>
-              Sharon works across the stack — from contract architecture and
-              testing in Solidity, Foundry, and Hardhat, to the frontends
-              that connect people to them with Next.js, Wagmi, and Viem.
+              At Blockfuse Labs, I teach Software Engineering Foundations, including web fundamentals, Linux and Bash, Git and GitHub, semantic HTML, responsive CSS, and JavaScript. I prepare live coding exercises and guide students as they build portfolio projects and learn collaborative workflows.
             </p>
           </div>
           <div className="mt-16 border-t border-editorial-border pt-8">
@@ -73,6 +65,9 @@ export default function AboutPage() {
               <Tag>ETHEREUM / EVM</Tag>
               <Tag>SOLIDITY</Tag>
               <Tag>FOUNDRY</Tag>
+              <Tag>RUST / NEAR</Tag>
+              <Tag>NODE.JS / POSTGRESQL</Tag>
+              <Tag>SOFTWARE ENGINEERING INSTRUCTION</Tag>
             </div>
           </div>
         </div>

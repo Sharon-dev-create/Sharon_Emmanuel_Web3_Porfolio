@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { skillCards } from "@/data/skills";
+import { skillGroups } from "@/data/skills";
 
 export const metadata: Metadata = {
   title: "Skills — Sharon Emmanuel",
@@ -17,30 +17,26 @@ export default function SkillsPage() {
 
           <div className="max-w-[720px]">
             <h1 className="font-display text-[2.8rem] leading-[0.95] tracking-[-0.06em] text-foreground md:text-[4.2rem] xl:text-[4rem]">
-              Technologies, frameworks,
+              Tools I use to build
               <br />
-              and tools i work with
+              and teach software
             </h1>
           </div>
         </section>
 
-        <section className="mt-12 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
-          {skillCards.map((skill) => (
-            <div
-              key={skill.name}
-              className="flex min-h-[122px] items-center gap-4 rounded-[22px] border border-editorial-border bg-white/40 px-5 py-4 shadow-[0_1px_0_rgba(17,17,17,0.03)] transition duration-200 hover:-translate-y-0.5 hover:bg-white/70"
-            >
-              <div
-                className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl text-xl font-semibold ${skill.badgeClass}`}
-              >
-                {skill.badge}
-              </div>
-
-              <div className="min-w-0">
-                <span className="block text-[1.05rem] font-medium tracking-[-0.03em] text-foreground md:text-[1.2rem]">
-                  {skill.name}
-                </span>
-              </div>
+        <section className="mt-16 grid gap-12 md:grid-cols-2">
+          {skillGroups.map((group) => (
+            <div key={group.title} className="border-t border-editorial-border pt-5">
+              <h2 className="font-mono text-label uppercase tracking-widest text-muted-variant">
+                {group.title}
+              </h2>
+              <ul className="mt-6 flex flex-wrap gap-3">
+                {group.skills.map((skill) => (
+                  <li key={skill} className="rounded-full border border-editorial-border px-4 py-3 font-body text-body-md">
+                    {skill}
+                  </li>
+                ))}
+              </ul>
             </div>
           ))}
         </section>

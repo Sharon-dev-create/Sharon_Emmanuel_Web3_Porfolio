@@ -21,6 +21,64 @@ export type Project = {
 export const projects: Project[] = [
   {
     number: "01",
+    slug: "disburse",
+    name: "DISBURSE",
+    image: "/disburse-dashboard.png",
+    title: "DISBURSE: NEAR PAYOUT ACCOUNTING FOUNDATION",
+    summary:
+      "A development foundation for teams that need campaign spending controls and a clear record of each payout. It combines a NEAR contract, a read-only TypeScript service foundation, PostgreSQL persistence, and a demo dashboard.",
+    tags: ["RUST", "NEAR", "TYPESCRIPT", "POSTGRESQL", "NEXT.JS"],
+    concepts: [
+      "NEP-141 campaign funding",
+      "Budget caps and payout reservations",
+      "Role-based approval and execution controls",
+      "Finalized event discovery",
+      "Durable jobs and lease coordination",
+      "Dry-run exact-output quote validation",
+    ],
+    github: "https://github.com/Sharon-dev-create/disburse",
+    liveUrl: "/projects/disburse",
+    sections: [
+      {
+        heading: "The problem",
+        body: [
+          "Teams running payout campaigns need to control what they spend and understand what happened to each payout. Disburse explores those controls across a NEAR contract, an execution-service foundation, and a dashboard.",
+        ],
+      },
+      {
+        heading: "Contract accounting",
+        body: [
+          "The Rust contract uses near-sdk to model campaign funding, budget caps, payout reservations, access roles, pause controls, and payout lifecycle records. NEP-141 funding and finalized contract events are part of the implemented contract and discovery work.",
+        ],
+      },
+      {
+        heading: "Service and data",
+        body: [
+          "The TypeScript service reads contract views and finalized events, with PostgreSQL schemas and migrations for durable execution jobs. The repository implements idempotency, lease-based coordination, and reconciliation components. Current security review evidence identifies unresolved legacy lease-write defects, so the overall review verdict is FAIL.",
+        ],
+      },
+      {
+        heading: "Dashboard",
+        body: [
+          "The Next.js dashboard presents campaign, payout, and recipient information using demo-oriented flows. Its displayed records are illustrative. The current workspace is read-only, and campaign creation, funding, and payout initiation are unavailable.",
+        ],
+      },
+      {
+        heading: "NEAR Intents quote preview",
+        body: [
+          "A 1Click adapter requests EXACT_OUTPUT quotes with dry: true and validates returned quote fields against the payout request and input budget. The adapter is tested with deterministic mock responses. A dry quote does not reserve liquidity or execute a payout, and the live quote route has not been tested.",
+        ],
+      },
+      {
+        heading: "Verification and status",
+        body: [
+          "The repository records passing local Rust contract, service, and PostgreSQL regression runs, alongside a failing independent security review of legacy job lease paths. No production deployment, live cross-chain payout, or completed end-to-end settlement is established. Testnet execution remains blocked in the latest readiness assessment.",
+        ],
+      },
+    ],
+  },
+  {
+    number: "01",
     slug: "nextkey",
     name: "NEXTKEY",
     image: "/nextkey-homepage.png",
@@ -40,7 +98,7 @@ export const projects: Project[] = [
       "Claim delays",
       "Time-based state transitions",
     ],
-    github: "https://github.com/Sharon-dev-create",
+    github: "https://github.com/Sharon-dev-create/nextkey",
     sections: [
       {
         heading: "Overview",
@@ -99,7 +157,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: "03",
+    number: "02",
     slug: "crowdfunding",
     name: "CROWDFUNDING DAPP",
     image: "/Crowdfunding-dapp.png",
@@ -114,7 +172,7 @@ export const projects: Project[] = [
       "Withdrawals",
       "Wallet integration",
     ],
-    github: "https://github.com/Sharon-dev-create",
+    github: "https://github.com/Sharon-dev-create/crowdfunding-d-app",
     liveUrl: "https://crowdfunding-d-app-omega.vercel.app/",
     sections: [
       {
@@ -150,7 +208,7 @@ export const projects: Project[] = [
     ],
   },
   {
-    number: "04",
+    number: "03",
     slug: "nexus",
     name: "NEXUS DEFI STAKING",
     image: "/nexus-homepage.png",
@@ -165,7 +223,7 @@ export const projects: Project[] = [
       "Withdrawals",
       "TypeScript frontend",
     ],
-    github: "https://github.com/Sharon-dev-create",
+    github: "https://github.com/Sharon-dev-create/nexus-defi-staking-dapp",
     liveUrl: "https://nexus-defi-staking-dapp-jg2cb7nxm.vercel.app/",
     sections: [
       {

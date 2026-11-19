@@ -1,88 +1,51 @@
-export type SkillCard = {
-  name: string;
-  badge: string;
-  badgeClass: string;
+export type SkillGroup = {
+  title: string;
+  skills: string[];
 };
 
-export const skillCards: SkillCard[] = [
+export const skillGroups: SkillGroup[] = [
   {
-    name: "Next.js",
-    badge: "N",
-    badgeClass: "bg-[#1d1d1d] text-white",
+    title: "Smart contracts & Web3",
+    skills: [
+      "Solidity, Ethereum & EVM",
+      "Rust & NEAR near-sdk",
+      "Foundry, Anvil & Hardhat",
+      "ERC-20, NEP-141 & token integrations",
+      "Escrow, staking & time-based claims",
+      "Access control, pause controls & payout accounting",
+      "wagmi, viem, Ethers.js & wallet integration",
+    ],
   },
   {
-    name: "React",
-    badge: "⚛",
-    badgeClass: "bg-[#d9f3f8] text-[#0f172a]",
+    title: "Frontend & dApps",
+    skills: [
+      "HTML, CSS, JavaScript & TypeScript",
+      "React, Next.js & Vite",
+      "Tailwind CSS & responsive layouts",
+      "Semantic HTML, Flexbox & CSS Grid",
+      "Wallet-connected dApps and dashboards",
+      "REST API integration",
+    ],
   },
   {
-    name: "TypeScript",
-    badge: "TS",
-    badgeClass: "bg-[#2d6cdf] text-white",
+    title: "Backend & data",
+    skills: [
+      "Node.js & TypeScript services",
+      "REST APIs & JSON-RPC clients",
+      "PostgreSQL, SQL schemas & migrations",
+      "Idempotent jobs & lease-based coordination",
+      "Event indexing, reconciliation & provider adapters",
+    ],
   },
   {
-    name: "JavaScript",
-    badge: "JS",
-    badgeClass: "bg-[#f5dc62] text-[#1f2937]",
-  },
-  {
-    name: "Tailwind CSS",
-    badge: "TW",
-    badgeClass: "bg-[#d9f0ff] text-[#0f172a]",
-  },
-  {
-    name: "Docker",
-    badge: "🐳",
-    badgeClass: "bg-[#dceeff] text-[#1e3a8a]",
-  },
-  {
-    name: "AWS",
-    badge: "AWS",
-    badgeClass: "bg-[#f5d9cc] text-[#1f2937]",
-  },
-  {
-    name: "Git",
-    badge: "Git",
-    badgeClass: "bg-[#f8b099] text-white",
-  },
-  {
-    name: "GitHub",
-    badge: "GH",
-    badgeClass: "bg-[#111111] text-white",
-  },
-  {
-    name: "Vercel",
-    badge: "▲",
-    badgeClass: "bg-[#191919] text-white",
-  },
-  {
-    name: "Solidity",
-    badge: "S",
-    badgeClass: "bg-[#8a8a8a] text-white",
-  },
-  {
-    name: "Rust",
-    badge: "R",
-    badgeClass: "bg-[#dfe5ea] text-[#1f2937]",
-  },
-  {
-    name: "Figma",
-    badge: "F",
-    badgeClass: "bg-[#f0d8ff] text-[#7c3aed]",
-  },
-  {
-    name: "VS Code",
-    badge: "VS",
-    badgeClass: "bg-[#c7dcff] text-[#1d4ed8]",
-  },
-  {
-    name: "Flutter",
-    badge: "F",
-    badgeClass: "bg-[#bfeafc] text-[#0284c7]",
-  },
-  {
-    name: "Supabase",
-    badge: "S",
-    badgeClass: "bg-[#d9f7df] text-[#166534]",
+    title: "Testing & tools",
+    skills: [
+      "Rust and TypeScript unit and integration tests",
+      "Foundry local EVM testing",
+      "PostgreSQL integration testing",
+      "Git, GitHub, Linux & Bash",
+      "NEAR CLI & cargo-near",
+      "Cross-stack debugging",
+    ],
   },
 ];

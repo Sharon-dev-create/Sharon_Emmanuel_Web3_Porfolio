@@ -22,14 +22,11 @@ export default function Hero() {
             </ArrowLink>
           </div>
           <h1 className="font-display text-headline-mobile md:text-display">
-            FULL-STACK WEB3 DEVELOPER
+            WEB3 DEVELOPER &amp; SOFTWARE ENGINEERING INSTRUCTOR
           </h1>
           <TerminalTypewriter />
           <p className="font-body text-body-lg max-w-2xl text-foreground/80">
-            I bring 3+ years of experience building refined digital experiences and decentralized applications
-            that bridge thoughtful frontend design with blockchain technology. From responsive interfaces and
-            interactive web applications to smart contracts and on-chain integrations, I focus on turning complex
-            ideas into products that feel intuitive, perform reliably, and work beautifully.
+            I build Web3 products across smart contracts, backend services, and responsive interfaces, and teach software engineering foundations at Blockfuse Labs. My work spans Ethereum and NEAR, from tested contract flows to dashboards that make complex systems easier to use.
           </p>
         </div>
       </div>
@@ -44,7 +41,7 @@ export default function Hero() {
         <div className="md:col-span-3 mt-6 md:mt-0">
           <Eyebrow>STACK</Eyebrow>
           <p className="font-mono text-label mt-2">
-            SOLIDITY / ETHEREUM / WEB3
+            SOLIDITY / RUST / ETHEREUM / NEAR
           </p>
         </div>
         <div className="md:col-span-4 mt-6 md:mt-0 text-left md:text-right">
