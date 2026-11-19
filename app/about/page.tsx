@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Eyebrow from "@/components/ui/Eyebrow";
 import Tag from "@/components/ui/Tag";
 
@@ -33,9 +34,12 @@ export default function AboutPage() {
             <Eyebrow>FIG. 1 / PORTRAIT</Eyebrow>
           </div>
           <div className="w-full aspect-[3/4] border border-editorial-border bg-surface flex items-center justify-center overflow-hidden">
-            <img
+            <Image
               src="/Portfolio-Img2.png"
               alt="Sharon Emmanuel"
+              width={1086}
+              height={1448}
+              sizes="(min-width: 1536px) 555px, (min-width: 768px) 40vw, 100vw"
               className="w-full h-full object-cover"
             />
           </div>

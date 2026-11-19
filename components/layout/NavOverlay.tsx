@@ -4,11 +4,11 @@ import Link from "next/link";
 import { social } from "@/data/social";
 
 const links = [
-  { number: "01", label: "WORK", href: "#work" },
-  { number: "02", label: "ABOUT", href: "#about" },
-  { number: "03", label: "SKILLS", href: "#skills" },
-  { number: "04", label: "FAQ", href: "#faq" },
-  { number: "05", label: "CONTACT", href: "#contact" },
+  { number: "01", label: "WORK", href: "/#work" },
+  { number: "02", label: "ABOUT", href: "/#about" },
+  { number: "03", label: "SKILLS", href: "/#skills" },
+  { number: "04", label: "FAQ", href: "/#faq" },
+  { number: "05", label: "CONTACT", href: "/#contact" },
 ];
 
 export default function NavOverlay({
@@ -25,6 +25,7 @@ export default function NavOverlay({
         open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
       }`}
       aria-hidden={!open}
+      inert={!open}
     >
       <div className="flex justify-between items-center w-full max-w-screen-2xl mx-auto">
         <Link

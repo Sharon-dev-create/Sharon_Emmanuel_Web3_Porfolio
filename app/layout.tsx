@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-page-custom-font -- The App Router root layout loads these fonts for every route. */
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/layout/Header";
