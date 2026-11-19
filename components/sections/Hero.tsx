@@ -1,6 +1,7 @@
 import { social } from "@/data/social";
 import ArrowLink from "@/components/ui/ArrowLink";
 import Eyebrow from "@/components/ui/Eyebrow";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -31,9 +32,13 @@ export default function Hero() {
         <div className="relative md:col-span-5 md:col-start-8">
           <div className="absolute -inset-5 -rotate-3 border border-editorial-border md:-inset-7" aria-hidden="true" />
           <div className="relative overflow-hidden border border-editorial-border bg-[#e7e6dc] p-2 shadow-[0_28px_80px_rgba(32,33,30,0.12)] md:p-3">
-            <img
+            <Image
               src="/disburse-dashboard.png"
               alt="Disburse read-only demo dashboard preview"
+              width={1600}
+              height={900}
+              priority
+              sizes="(max-width: 768px) 100vw, 40vw"
               className="aspect-[1.25/1] w-full object-cover object-top transition-transform duration-700 hover:scale-[1.025]"
             />
             <div className="flex items-center justify-between px-3 py-4 md:px-5">

@@ -2,14 +2,14 @@ import Eyebrow from "@/components/ui/Eyebrow";
 
 export default function Experience() {
   return (
-    <section id="experience" className="px-page-mobile md:px-page-desktop py-20 md:py-28">
+    <section id="experience" className="bg-[#eeede5] px-page-mobile md:px-page-desktop py-16 md:py-24">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         <div className="md:col-span-2">
           <Eyebrow>03/ EXPERIENCE</Eyebrow>
         </div>
         <div className="md:col-span-9">
           <h2 className="font-display text-headline-mobile md:text-headline-lg">Building products independently.</h2>
-          <div className="mt-12 border-t border-editorial-border">
+          <div className="mt-8 border-t border-editorial-border">
             <div className="grid gap-4 py-8 md:grid-cols-4">
               <span className="font-mono text-label uppercase text-muted">Independent</span>
               <div className="md:col-span-3">

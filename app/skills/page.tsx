@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function SkillsPage() {
   return (
-    <div id="skills" className="mx-auto w-full max-w-screen-2xl px-page-mobile py-6 md:px-page-desktop md:py-10">
+    <div id="skills" className="mx-auto w-full max-w-screen-2xl bg-[#eeede5] px-page-mobile py-16 md:px-page-desktop md:py-24">
 
       <main className="pt-8 md:pt-12">
         <section className="grid gap-4 md:gap-6">
@@ -22,15 +22,16 @@ export default function SkillsPage() {
           </div>
         </section>
 
-        <section className="mt-16 grid gap-12 md:grid-cols-2">
-          {skillGroups.map((group) => (
-            <div key={group.title} className="border-t border-editorial-border pt-5">
-              <h2 className="font-mono text-label uppercase tracking-widest text-muted-variant">
+        <section className="mt-12 grid gap-4 md:grid-cols-2">
+          {skillGroups.map((group, index) => (
+            <div key={group.title} className={`border border-editorial-border p-6 md:p-8 ${index === 0 ? "bg-background md:row-span-2" : "bg-white/55"}`}>
+              <span className="font-mono text-label text-muted">0{index + 1} / CAPABILITY</span>
+              <h2 className="mt-4 font-display text-headline-md tracking-tight text-foreground">
                 {group.title}
               </h2>
-              <ul className="mt-6 flex flex-wrap gap-3">
+              <ul className="mt-6 flex flex-wrap gap-x-4 gap-y-3">
                 {group.skills.map((skill) => (
-                  <li key={skill} className="rounded-full border border-editorial-border px-4 py-3 font-body text-body-md">
+                  <li key={skill} className="border-b border-editorial-border py-2 font-body text-body-md text-foreground/80">
                     {skill}
                   </li>
                 ))}

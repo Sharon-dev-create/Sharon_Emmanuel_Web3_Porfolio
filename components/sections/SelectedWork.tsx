@@ -7,7 +7,7 @@ export default function SelectedWork() {
   const featured = projects.slice(0, 2);
 
   return (
-    <section className="px-page-mobile md:px-page-desktop pb-section" id="work">
+    <section className="px-page-mobile md:px-page-desktop py-16 md:py-24" id="work">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16">
         <div className="md:col-span-2">
           <Eyebrow>01/ SELECTED WORK</Eyebrow>

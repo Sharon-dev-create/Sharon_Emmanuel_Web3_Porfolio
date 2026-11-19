@@ -15,12 +15,12 @@ const timeline = [
 
 export default function AboutPage() {
   return (
-    <div id="about" className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop pt-24 pb-section">
+    <div id="about" className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop pt-20 pb-24 md:pt-28 md:pb-32">
       {/* Hero */}
       <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section">
         <div className="md:col-span-7 md:col-start-6">
           <Eyebrow className="mb-4 block">01/ ABOUT</Eyebrow>
-          <h1 className="font-display text-headline-mobile md:text-display mb-8">
+          <h1 className="font-display text-headline-mobile md:text-display mb-8 tracking-[-0.055em]">
             I BUILD AT THE PROTOCOL LAYER
           </h1>
         </div>
