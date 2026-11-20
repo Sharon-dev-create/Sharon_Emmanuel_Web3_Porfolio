@@ -110,6 +110,25 @@ body {
     height: auto;
     aspect-ratio: 1.35 / 1;
   }
+
+  .hero-preview-image {
+    object-position: 50% 12%;
+  }
+}
+
+@media (max-width: 360px) {
+  #home h1 {
+    font-size: clamp(2.55rem, 13vw, 3rem);
+    letter-spacing: -0.075em;
+  }
+
+  #home .hero-preview-image {
+    aspect-ratio: 1.4 / 1;
+  }
+
+  #home .grid + div {
+    margin-top: 2rem;
+  }
 }
 
 .material-symbols-outlined {
