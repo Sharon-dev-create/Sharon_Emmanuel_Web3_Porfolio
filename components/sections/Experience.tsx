@@ -19,16 +19,6 @@ export default function Experience() {
                 </p>
               </div>
             </div>
-            <div className="grid gap-4 border-t border-editorial-border py-8 md:grid-cols-4">
-              <span className="font-mono text-label uppercase text-muted">2024 — Present</span>
-              <div className="md:col-span-3">
-                <h3 className="font-display text-headline-md">Software Engineering Foundations Instructor</h3>
-                <p className="mt-2 font-body text-body-md text-muted-variant">Blockfuse Labs</p>
-                <p className="mt-5 max-w-2xl font-body text-body-md text-foreground/75">
-                  Teach web fundamentals, Linux and Bash, Git and GitHub, semantic HTML, responsive CSS, and JavaScript. Guide learners through practical portfolio work and collaborative development workflows.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

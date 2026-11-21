@@ -8,7 +8,6 @@ export const metadata: Metadata = {
 };
 
 const timeline = [
-  { year: "2024–PRESENT", label: "SOFTWARE ENGINEERING — BLOCKFUSE LABS" },
   { year: "2024–2026", label: "ETHEREUM DAPPS & SMART CONTRACTS" },
   { year: "2026", label: "NEAR PROTOCOL DEVELOPMENT" },
 ];
@@ -49,10 +48,7 @@ export default function AboutPage() {
           </div>
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <p>
-              I like working across the seams between systems: the contract rule, the service that reads it, the data that records it, and the interface someone uses. My projects range from Ethereum inheritance, escrow, crowdfunding, and staking to Disburse, a NEAR payout accounting foundation. I studied Geophysics, and that shift in disciplines keeps me curious about how complex systems behave.
-            </p>
-            <p>
-              At Blockfuse Labs, I teach Software Engineering Foundations, including web fundamentals, Linux and Bash, Git and GitHub, semantic HTML, responsive CSS, and JavaScript. I prepare live coding exercises and guide students as they build portfolio projects and learn collaborative workflows.
+              I build full-stack products where polished interfaces meet dependable services and on-chain logic. My stack spans React and Next.js, TypeScript and Node.js, PostgreSQL, and smart contracts in Solidity and Rust across Ethereum and NEAR. I connect these layers into complete systems: responsive user experiences, typed APIs, durable data models, contract integrations, and automated tests. Recent work includes Ethereum inheritance and crowdfunding dApps, plus Disburse, a NEAR payout accounting foundation with explicit authorization, accounting, and read-only service boundaries.
             </p>
           </div>
           <div className="mt-16 border-t border-editorial-border pt-8">
@@ -67,7 +63,6 @@ export default function AboutPage() {
               <Tag>FOUNDRY</Tag>
               <Tag>RUST / NEAR</Tag>
               <Tag>NODE.JS / POSTGRESQL</Tag>
-              <Tag>SOFTWARE ENGINEERING INSTRUCTION</Tag>
             </div>
           </div>
         </div>
