@@ -47,8 +47,24 @@ export default function AboutPage() {
             <Eyebrow>02/ BIO</Eyebrow>
           </div>
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
+            <h2 className="font-display text-headline-md tracking-[-0.035em]">The story behind the code</h2>
             <p>
-              I build full-stack products where polished interfaces meet dependable services and on-chain logic. My stack spans React and Next.js, TypeScript and Node.js, PostgreSQL, and smart contracts in Solidity and Rust across Ethereum and NEAR. I connect these layers into complete systems: responsive user experiences, typed APIs, durable data models, contract integrations, and automated tests. Recent work includes Ethereum inheritance and crowdfunding dApps, plus Disburse, a NEAR payout accounting foundation with explicit authorization, accounting, and read-only service boundaries.
+              I&apos;m a software and blockchain engineer passionate about building secure, scalable, and impactful digital products. My expertise spans full-stack web development, smart contract engineering, and blockchain infrastructure.
+            </p>
+            <p>
+              With a strong foundation in <strong>React, Next.js, TypeScript, and JavaScript</strong> for frontend development, alongside <strong>Node.js, Rust, and PostgreSQL</strong> for backend systems, I build applications that combine intuitive user experiences with reliable engineering.
+            </p>
+            <p>
+              I specialize in <strong>Solidity smart contract development</strong>, using <strong>Foundry, Hardhat, and EVM-compatible networks like Ethereum and Base</strong> to build secure decentralized applications. My experience also extends to <strong>Rust and NEAR Protocol</strong>, where I develop blockchain infrastructure and financial transaction systems.
+            </p>
+            <p>
+              From <strong>ERC-20 token management and escrow systems to crowdfunding platforms and blockchain payment infrastructure</strong>, I focus on designing solutions that prioritize security, transparency, and reliability.
+            </p>
+            <p>
+              Beyond building products, I work as a <strong>Blockchain Engineer and Software Engineering Instructor at Blockfuse Labs</strong>, developing blockchain solutions while mentoring the next generation of software engineers.
+            </p>
+            <p>
+              <strong>My goal is to transform complex ideas into secure, reliable, and meaningful products that solve real-world problems.</strong>
             </p>
           </div>
           <div className="mt-16 border-t border-editorial-border pt-8">
