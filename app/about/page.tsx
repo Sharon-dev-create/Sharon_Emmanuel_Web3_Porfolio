@@ -14,19 +14,19 @@ const timeline = [
 
 export default function AboutPage() {
   return (
-    <div id="about" className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop pt-20 pb-24 md:pt-28 md:pb-32">
+    <div id="about" className="max-w-screen-2xl mx-auto w-full px-page-mobile md:px-page-desktop pt-12 pb-16 md:pt-16 md:pb-20">
       {/* Hero */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-12 md:mb-16">
         <div className="md:col-span-7 md:col-start-6">
           <Eyebrow className="mb-4 block">01/ ABOUT</Eyebrow>
-          <h1 className="font-display text-headline-mobile md:text-display mb-8 tracking-[-0.055em]">
+          <h1 className="font-display text-headline-mobile md:text-display mb-0 tracking-[-0.055em]">
             I BUILD AT THE PROTOCOL LAYER
           </h1>
         </div>
       </section>
 
       {/* Portrait & Bio */}
-      <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-section items-start">
+      <section className="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-16 md:mb-20 items-start">
         <div className="md:col-span-5 relative mb-12 md:mb-0">
           <div className="border-t border-editorial-border pt-4 mb-4">
             <Eyebrow>FIG. 1 / PORTRAIT</Eyebrow>
@@ -49,22 +49,19 @@ export default function AboutPage() {
           <div className="font-body text-body-lg text-foreground max-w-2xl space-y-6">
             <h2 className="font-display text-headline-md tracking-[-0.035em]">The story behind the code</h2>
             <p>
-              I&apos;m a software and blockchain engineer passionate about building secure, scalable, and impactful digital products. My expertise spans full-stack web development, smart contract engineering, and blockchain infrastructure.
+              I&apos;m a software and blockchain engineer building secure, useful products across full-stack web, smart contracts, and blockchain infrastructure.
             </p>
             <p>
-              With a strong foundation in <strong>React, Next.js, TypeScript, and JavaScript</strong> for frontend development, alongside <strong>Node.js, Rust, and PostgreSQL</strong> for backend systems, I build applications that combine intuitive user experiences with reliable engineering.
+              I work with <strong>React, Next.js, TypeScript, Node.js, Rust, and PostgreSQL</strong> to connect clear user experiences with reliable backend systems.
             </p>
             <p>
-              I specialize in <strong>Solidity smart contract development</strong>, using <strong>Foundry, Hardhat, and EVM-compatible networks like Ethereum and Base</strong> to build secure decentralized applications. My experience also extends to <strong>Rust and NEAR Protocol</strong>, where I develop blockchain infrastructure and financial transaction systems.
+              I build and test <strong>Solidity</strong> contracts with Foundry and Hardhat for Ethereum and Base, and develop blockchain systems in <strong>Rust on NEAR</strong>.
             </p>
             <p>
-              From <strong>ERC-20 token management and escrow systems to crowdfunding platforms and blockchain payment infrastructure</strong>, I focus on designing solutions that prioritize security, transparency, and reliability.
+              My projects include ERC-20, escrow, and crowdfunding dApps, alongside Disburse, a NEAR payout accounting foundation. I prioritize security, transparency, and reliability.
             </p>
             <p>
-              Beyond building products, I work as a <strong>Blockchain Engineer and Software Engineering Instructor at Blockfuse Labs</strong>, developing blockchain solutions while mentoring the next generation of software engineers.
-            </p>
-            <p>
-              <strong>My goal is to transform complex ideas into secure, reliable, and meaningful products that solve real-world problems.</strong>
+              At <strong>Blockfuse Labs</strong>, I build blockchain solutions and teach software engineering. My goal is to turn complex ideas into dependable products that solve real problems.
             </p>
           </div>
           <div className="mt-16 border-t border-editorial-border pt-8">
